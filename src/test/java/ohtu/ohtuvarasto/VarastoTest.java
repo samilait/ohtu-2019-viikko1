@@ -66,7 +66,7 @@ public class VarastoTest {
     
     @Test
     public void negatiivinenLisaysEiMuutaSaldoa() {
-        double saldo = varasto.getSaldo();
+        double saldo = varasto.getSaldo() + 1.0;
         varasto.lisaaVarastoon(-8);
 
         // saldon pitäisi olla sama kun lisätty määrä
